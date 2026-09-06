@@ -43,34 +43,22 @@
     "test": "jest --coverage --collectCoverageFrom=src/*.{js}"
   },
   "dependencies": {
-<<<<<<< before updating
-    "@jupyterlab/application": "^4.5.7",
-    "@jupyterlab/apputils": "^4.6.7",
-    "@jupyterlab/coreutils": "^6.5.7",
-    "@jupyterlab/launcher": "^4.5.7",
-    "@jupyterlab/notebook": "^4.5.7",
-    "@jupyterlab/services": "^7.5.10",
-    "@lumino/disposable": "^2.1.5",
-    "@lumino/widgets": "^2.7.5",
-    "requests-helper": "^0.1.5"
-=======
     "@jupyterlab/application": "^4.6.3",
     "@jupyterlab/apputils": "^4.7.3",
+    "@jupyterlab/coreutils": "^6.6.3",
+    "@jupyterlab/launcher": "^4.6.3",
     "@jupyterlab/notebook": "^4.6.3",
     "@jupyterlab/services": "^7.6.3",
-    "@lumino/disposable": "^2.1.6"
->>>>>>> after updating
+    "@lumino/disposable": "^2.1.6",
+    "@lumino/widgets": "^2.9.0",
+    "requests-helper": "^0.1.5"
   },
   "devDependencies": {
     "@babel/cli": "^8.0.4",
     "@babel/core": "^8.0.1",
     "@babel/preset-env": "^8.0.2",
     "@jupyterlab/builder": "^4.5.10",
-<<<<<<< before updating
-    "babel-jest": "^30.4.1",
-=======
     "babel-jest": "^30.5.1",
->>>>>>> after updating
     "cpy-cli": "^7.0.0",
     "isomorphic-fetch": "^3.0.0",
     "jest": "^30.5.1",
@@ -78,13 +66,8 @@
     "jest-junit": "^17.0.0",
     "jest-transform-css": "^6.0.3",
     "mkdirp": "^3.0.1",
-<<<<<<< before updating
-    "oxfmt": "^0.65.0",
-    "oxlint": "^1.80.0",
-=======
     "oxfmt": "^0.66.0",
     "oxlint": "^1.81.0",
->>>>>>> after updating
     "rimraf": "^6.1.3"
   }
 }
