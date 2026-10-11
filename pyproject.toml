@@ -55,11 +55,14 @@ develop = [
     "hatchling",
     "jupyter-builder>=1.2.3,<2",
     "mdformat",
+    "mdformat-frontmatter",
     "mdformat-tables>=1",
     "jupyterlab>=4,<5",
     "pytest",
     "pytest-cov",
+    "recommonmark",
     "ruff",
+    "sphinx-rtd-theme",
     "twine",
     "ty",
     "uv",
@@ -110,7 +113,7 @@ replace = "jupyterlab_iframe=={new_version}"
 [tool.coverage.run]
 branch = true
 omit = [
-    "jupyterlab_iframe/tests/integration/",
+    "jupyterlab_iframe/tests/integration/*",
 ]
 
 [tool.coverage.report]
