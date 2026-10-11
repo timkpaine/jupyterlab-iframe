@@ -10,8 +10,8 @@ from tornado_proxy_handlers import (
 
 
 class ProxyHandler(JupyterHandler, TProxyHandler):
-    def initialize(self, **kwargs):
-        super().initialize(**kwargs)
+    def initialize(self, proxy_url="/", **kwargs):
+        super().initialize(proxy_url=proxy_url, **kwargs)
 
     @tornado.web.authenticated
     @tornado.gen.coroutine

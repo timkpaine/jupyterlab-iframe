@@ -45,13 +45,8 @@ lint-js:  ## run js linter
 	cd js; pnpm lint
 
 lint-docs:  ## lint docs with mdformat and codespell
-<<<<<<< before updating
-	python -m mdformat --check README.md
-	python -m codespell_lib README.md
-=======
-	python -m mdformat --check README.md $(wildcard docs/src) 
-	python -m codespell_lib README.md $(wildcard docs/src) 
->>>>>>> after updating
+	python -m mdformat --check README.md $(wildcard docs/src)
+	python -m codespell_lib README.md $(wildcard docs/src)
 
 lint: lint-js lint-py lint-docs  ## run project linters
 
@@ -67,13 +62,8 @@ fix-js:  ## fix js formatting
 	cd js; pnpm fix
 
 fix-docs:  ## autoformat docs with mdformat and codespell
-<<<<<<< before updating
-	python -m mdformat README.md
-	python -m codespell_lib --write README.md
-=======
-	python -m mdformat README.md $(wildcard docs/src) 
-	python -m codespell_lib --write README.md $(wildcard docs/src) 
->>>>>>> after updating
+	python -m mdformat README.md $(wildcard docs/src)
+	python -m codespell_lib --write README.md $(wildcard docs/src)
 
 fix: fix-js fix-py fix-docs  ## run project autoformatters
 
@@ -89,7 +79,7 @@ check-dist:  ## check python sdist and wheel with check-dist
 	check-dist -v
 
 check-types:  ## check python types with ty
-	ty check --python $$(which python)
+	python -m ty check
 
 checks: check-dist check-types
 
