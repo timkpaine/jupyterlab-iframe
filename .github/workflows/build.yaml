@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup Python
-        uses: actions-ext/python/setup@c8228d827a81b9f8c808825328af361c45461ba3
+        uses: actions-ext/python/setup@c7ef9cbf13bc854a8d1422e9f8c6ee7a7ce1b911
         with:
           version: "3.10"
 
@@ -66,7 +66,7 @@ jobs:
         if: always()
 
       - name: Publish test results
-        uses: EnricoMi/publish-unit-test-result-action@d0a4676d0e0b938bc201470d88276b7c74c712b3  # v2.24.0
+        uses: EnricoMi/publish-unit-test-result-action@7622c5bf3d112a72ab4fa3951c2aa5723d8ab92d  # v2.25.0
         with:
           files: '**/junit.xml'
 
@@ -79,12 +79,12 @@ jobs:
         run: make dist
 
       - name: Test wheel
-        uses: actions-ext/python/test-wheel@c8228d827a81b9f8c808825328af361c45461ba3
+        uses: actions-ext/python/test-wheel@c7ef9cbf13bc854a8d1422e9f8c6ee7a7ce1b911
         with:
           module: jupyterlab_iframe
 
       - name: Test source distribution
-        uses: actions-ext/python/test-sdist@c8228d827a81b9f8c808825328af361c45461ba3
+        uses: actions-ext/python/test-sdist@c7ef9cbf13bc854a8d1422e9f8c6ee7a7ce1b911
         with:
           module: jupyterlab_iframe
 
